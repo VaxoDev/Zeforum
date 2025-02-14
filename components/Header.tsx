@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { BookOpen, Settings, Heart, LogOut, PlusCircle, LayoutDashboard } from "lucide-react"
+import { BookOpen, Settings, Heart, LogOut, PlusCircle, LayoutDashboard, House } from "lucide-react"
 import { useAuthContext } from "./AuthProvider"
 import { useAuth } from "../hooks/useAuth"
 import { Button } from "@/components/ui/button"
@@ -48,6 +48,7 @@ export function Header() {
   }
 
   const navItems = [
+    { href: "/", icon: House, label: "სახლი" },
     { href: "/blog", icon: BookOpen, label: "ფორუმი" },
     { href: "/favorites", icon: Heart, label: "ფავორიტები" },
     { href: "#", icon: Settings, label: "პარამეტრები", onClick: () => setShowSettings(true) },

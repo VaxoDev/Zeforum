@@ -9,9 +9,8 @@ import type React from "react" // Added import for React
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "ZeForum",
-  description: "ჩვენი ქალაქის პრობლემების განხილვის პლატფორმა",
-    generator: 'v0.dev'
+  title: "ZeForum - ზესტაფონის ფორუმი",
+  description: "ჩვენი ქალაქის პრობლემების განხილვის პლატფორმა - სკოლის მოსწავლეთა პროექტი"
 }
 
 export default function RootLayout({

@@ -82,14 +82,14 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="container flex h-screen w-screen flex-col items-center justify-center">
+    <div className="flex h-screen w-full items-center justify-center overflow-x-hidden p-4">
       <motion.div
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="w-full max-w-md"
+        className="w-full max-w-md mx-auto"
       >
-        <Card>
+        <Card className="mx-2">
           <CardHeader className="space-y-1">
             <CardTitle className="text-2xl font-bold tracking-tight">
               {isLogin ? "მოგესალმებით" : "შექმენით ანგარიში"}
@@ -161,4 +161,3 @@ export default function LoginPage() {
     </div>
   )
 }
-
